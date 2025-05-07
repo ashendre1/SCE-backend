@@ -16,7 +16,7 @@ APIs
 
 1) Login: Use the /login endpoint to authenticate users.
 2) Logout: Use the /logout endpoint to clear the session.
-3) Signup: Use the POSt /signup endpoint to register the user initially.
+3) Signup: Use the POST /signup endpoint to register the user initially.
 4) Course Data: GET /courseData?courseNameSection=<value>: Fetch course data by courseNameSection.
 5) Course Access: GET /courseAccess: Fetch course access data by email.
 
