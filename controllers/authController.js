@@ -10,6 +10,10 @@ const createToken = (id, email) => {
     });
 }
 
+module.exports.testapi = async (req, res) => {
+    res.status(200).json({message: 'test api'});
+}
+
 module.exports.signup = async (req, res) => {
     const {email, password} = req.body;
     console.log('signup', email, password);
