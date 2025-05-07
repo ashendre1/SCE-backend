@@ -1,4 +1,4 @@
-const CourseData = require('../models/courseData');
+const CourseData = require('../models/CourseData');
 
 module.exports.course_data_get = async (req, res) => {
     const {courseNameSection} = req.query;
