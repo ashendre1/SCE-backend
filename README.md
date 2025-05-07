@@ -24,3 +24,12 @@ APIs
 To import course data into mongodb, check the importData.js file. You need to download the csv file and run this script so that data gets update in the MongoDB database.
 
 To import course access data into mongodb, check the importCourseAccessData.js file and run the script.
+
+
+MongoDB database schema:
+
+1) users: contains username(has to be charlotte.edu account compulsory) and hashed password
+
+2) course_accesses: contains username and list of courses that professor has access to
+
+3) course_datas: contains details of each course with data required for graph visualization
