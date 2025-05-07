@@ -18,7 +18,7 @@ const port = 8000;
 
 // HTTPS options
 const options = {
-    key: fs.readFileSync("./config/cci-ci-test_charlotte_edu.crt"),
+    key: fs.readFileSync("./config/cci-ci-test_charlotte_edu.key"),
     cert: fs.readFileSync("./config/publicKeyCert.pem"),
     ca: [
         fs.readFileSync("./config/intermediateCert.pem"),
