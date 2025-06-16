@@ -25,7 +25,7 @@ app.use(courseAccessRoutes);
 app.use(courseDataRoutes);
 
 // MongoDB connection
-const dbURI = "mongodb+srv://ashendr1:2ScuA7QoqvZzVC6U@cluster0.jhhuy.mongodb.net/SCE0?retryWrites=true&w=majority&appName=Cluster0";
+const dbURI = "";
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // SSL options
