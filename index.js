@@ -7,6 +7,7 @@ const courseAccessRoutes = require('./routes/courseAccessRoutes');
 const courseDataRoutes = require('./routes/courseDataRoutes');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+require('dotenv').config(); 
 
 const app = express();
 
@@ -25,7 +26,7 @@ app.use(courseAccessRoutes);
 app.use(courseDataRoutes);
 
 // MongoDB connection
-const dbURI = "";
+const dbURI = process.env.DB_URI;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         // SSL options
